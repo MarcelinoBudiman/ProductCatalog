@@ -45,7 +45,7 @@ struct HomeView: View {
                 }
                 .opacity(homeController.searchText.isEmpty ? 1 : 0)
                 
-                LazyVGrid(columns: columns) { 
+                LazyVGrid(columns: columns) {
                     
                     ForEach(homeController.filteredProducts, id: \.id) { product in
                         NavigationLink(value: product) {
